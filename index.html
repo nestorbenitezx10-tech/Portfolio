@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal developer portfolio and projects">
+  <title>My Portfolio | Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="profile-link" href="#home">
+      <img src="image/nest.jpg" alt="My profile photo" class="profile-photo">
+    </a>
+
+    <div class="profile-info">
+      <h2>Nestor S. Benitez <i class="fa-solid fa-circle-check verified"></i></h2>
+      <p class="username">NestorBenitez</p>
+      <p class="visit"><span></span> Welcome to my portfolio</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://discord.com/" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <button id="theme-toggle" aria-label="Toggle color theme"><i class="fa-regular fa-sun"></i></button>
+    </div>
+
+    <nav class="navigation">
+      <a class="nav-link active" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="nav-link" href="#projects"><i class="fa-regular fa-folder"></i> Projects</a>
+      <a class="nav-link" href="#services"><i class="fa-solid fa-briefcase"></i> Services</a>
+      <a class="nav-link" href="#tools"><i class="fa-solid fa-layer-group"></i> Tools</a>
+      <a class="nav-link" href="#resources"><i class="fa-regular fa-bookmark"></i> Free Resources</a>
+      <a class="nav-link" href="#about"><i class="fa-regular fa-user"></i> About</a>
+      <a class="nav-link" href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
+    </nav>
+
+    <footer class="sidebar-footer">
+      © <span id="year"></span> Nestor S. Benitez. All rights reserved.
+    </footer>
+  </aside>
+
+  <main class="main-content" id="home">
+    <section class="toolkit section" id="tools">
+      <div class="top-heading">
+        <div>
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h1>Tools I work with</h1>
+        </div>
+        <a class="contact-button" href="#contact">
+          <i class="fa-regular fa-envelope"></i> Get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="tool-list">
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-brands fa-java"></i> Java</span>
+        <span><i class="fa-brands fa-html5"></i> HTML</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+        <span><i class="fa-brands fa-android"></i> Kotlin</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-copy">
+            <p class="eyebrow">FEATURED · PROJECT 01</p>
+            <h2>LexiQuest</h2>
+            <p>A word-hunting game built to make learning vocabulary fun and interactive.</p>
+            <a class="project-tag" href="#contact">Student project</a>
+          </div>
+          <div class="project-art">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>LEXIQUEST</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon blue"><i class="fa-solid fa-laptop-code"></i></div>
+          <p class="eyebrow">PROJECT · WEB</p>
+          <h2>My Portfolio</h2>
+          <p>A personal website showcasing my skills and development journey.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon orange"><i class="fa-solid fa-book-open"></i></div>
+          <p class="eyebrow">PROJECT · JAVA</p>
+          <h2>Library Book Tracker</h2>
+          <p>A simple system for adding, editing, searching, and deleting book records.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon purple"><i class="fa-solid fa-code"></i></div>
+          <p class="eyebrow">PROJECT · PYTHON</p>
+          <h2>Student Management</h2>
+          <p>A CRUD application for organizing student information and records.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="card-icon green"><i class="fa-solid fa-lightbulb"></i></div>
+          <p class="eyebrow">CURRENTLY LEARNING</p>
+          <h2>New ideas</h2>
+          <p>Exploring application development, UI design, and better coding practices.</p>
+        </article>
+
+        <article class="project-card wide-card">
+          <p class="eyebrow">WHAT'S NEXT</p>
+          <h2>More work will appear here <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
+          <p>I'm continuously learning and building new projects. Check back for updates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section information-section" id="services">
+      <p class="eyebrow">WHAT I CAN DO</p>
+      <h2>Services</h2>
+      <div class="simple-grid">
+        <article class="project-card">
+          <h3>Web Development</h3>
+          <p>Building responsive pages using HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="project-card">
+          <h3>Programming Projects</h3>
+          <p>Creating beginner-friendly applications and CRUD systems.</p>
+        </article>
+        <article class="project-card">
+          <h3>UI Design</h3>
+          <p>Planning clean layouts and user-friendly interfaces.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section information-section" id="resources">
+      <p class="eyebrow">LEARN AND EXPLORE</p>
+      <h2>Free Resources</h2>
+      <div class="resource-links">
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a>
+        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools ↗</a>
+        <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer">GitHub Docs ↗</a>
+      </div>
+    </section>
+
+    <section class="section information-section" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>About Me</h2>
+      <p class="about-text">
+        Hello! I'm a student developer interested in programming,
+        web development, and mobile application development.
+        I enjoy learning new technologies and creating projects
+        that help me improve my skills.
+      </p>
+      <div class="skill-tags">
+        <span>Python</span><span>Java</span><span>C++</span>
+        <span>Kotlin</span><span>HTML</span><span>CSS</span>
+      </div>
+    </section>
+
+    <section class="section information-section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Get in touch</h2>
+      <p class="about-text">Have a question or want to discuss a project? Send me an email.</p>
+      <a class="contact-button" href="mailto:nestorbenitezx10@gmail.com">
+        <i class="fa-regular fa-envelope"></i> Email me
+      </a>
+    </section>
+
+    <div class="bottom-space"></div>
+  </main>
+
+  <a class="floating-message" href="mailto:nestorbenitezx10@gmail.com">
+    <i class="fa-regular fa-envelope"></i> Message me
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
