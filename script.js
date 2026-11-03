@@ -1,58 +1,21 @@
 
-const themeToggle = document.getElementById("theme-toggle");
-const themeIcon = themeToggle.querySelector("i");
+const themeToggle = document.getElementById("themeToggle");
 
-// Toggle between dark and light themes.
 themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("light-theme");
+    document.body.classList.toggle("light");
 
-  const isLight = document.body.classList.contains("light-theme");
-
-  themeIcon.className = isLight
-    ? "fa-solid fa-moon"
-    : "fa-regular fa-sun";
-
-  themeToggle.setAttribute(
-    "aria-label",
-    isLight ? "Switch to dark theme" : "Switch to light theme"
-  );
+    const isLight = document.body.classList.contains("light");
+    themeToggle.textContent = isLight ? "Dark Mode" : "Light Mode";
 });
 
-// Display the current year in the sidebar.
 document.getElementById("year").textContent =
-  new Date().getFullYear();
+    new Date().getFullYear();
 
-// Highlight the sidebar link for the current section.
-const navLinks = document.querySelectorAll(".nav-link");
+document.getElementById("contactForm").addEventListener("submit", (event) => {
+    event.preventDefault();
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.forEach((item) => item.classList.remove("active"));
-    link.classList.add("active");
-  });
+    document.getElementById("formNotice").textContent =
+        "The form is working, but messages are not sent yet. Connect a form service to receive messages.";
+
+    event.target.reset();
 });
-
-// Update the active navigation item while scrolling.
-const sections = document.querySelectorAll(
-  "main section[id]"
-);
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        navLinks.forEach((link) => {
-          const matches =
-            link.getAttribute("href") === `#${entry.target.id}`;
-
-          link.classList.toggle("active", matches);
-        });
-      }
-    });
-  },
-  {
-    rootMargin: "-20% 0px -65% 0px"
-  }
-);
-
-sections.forEach((section) => observer.observe(section));

@@ -2,182 +2,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My personal developer portfolio and projects">
-  <title>My Portfolio | Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside class="sidebar">
-    <a class="profile-link" href="#home">
-      <img src="image/nest.jpg" alt="My profile photo" class="profile-photo">
-    </a>
 
-    <div class="profile-info">
-      <h2>Nestor S. Benitez <i class="fa-solid fa-circle-check verified"></i></h2>
-      <p class="username">NestorBenitez</p>
-      <p class="visit"><span></span> Welcome to my portfolio</p>
-    </div>
+    <header>
+        <h2 class="logo">MyPortfolio</h2>
 
-    <div class="social-links">
-      <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://github.com/" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://discord.com/" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
-      <button id="theme-toggle" aria-label="Toggle color theme"><i class="fa-regular fa-sun"></i></button>
-    </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#tools">Tools</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
 
-    <nav class="navigation">
-      <a class="nav-link active" href="#home"><i class="fa-solid fa-house"></i> Home</a>
-      <a class="nav-link" href="#projects"><i class="fa-regular fa-folder"></i> Projects</a>
-      <a class="nav-link" href="#services"><i class="fa-solid fa-briefcase"></i> Services</a>
-      <a class="nav-link" href="#tools"><i class="fa-solid fa-layer-group"></i> Tools</a>
-      <a class="nav-link" href="#resources"><i class="fa-regular fa-bookmark"></i> Free Resources</a>
-      <a class="nav-link" href="#about"><i class="fa-regular fa-user"></i> About</a>
-      <a class="nav-link" href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a>
-    </nav>
+        <button id="themeToggle">Light Mode</button>
+    </header>
 
-    <footer class="sidebar-footer">
-      © <span id="year"></span> Nestor S. Benitez. All rights reserved.
+    <main>
+        <section id="home" class="section home">
+            <div class="home-text">
+                <p class="accent">HELLO, WELCOME TO MY PORTFOLIO</p>
+                <h1>Hi, I'm <span>Nestor S. Benitez</span></h1>
+                <h2>IT Student and Aspiring Developer</h2>
+                <p>
+                    I enjoy learning programming, developing applications,
+                    and creating useful digital solutions.
+                </p>
+                <a class="btn" href="#projects">View My Projects</a>
+            </div>
+
+            <img src="image/nest.jpg" alt="My profile picture"
+                 class="profile-picture">
+        </section>
+
+        <section id="services" class="section">
+            <p class="accent">WHAT I CAN DO</p>
+            <h1>My Services</h1>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Web Development</h3>
+                    <p>Creating simple and responsive websites using HTML and CSS.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Application Development</h3>
+                    <p>Building beginner-level applications using programming languages.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Programming Solutions</h3>
+                    <p>Developing basic programs to solve common problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="accent">MY WORK</p>
+            <h1>My Projects</h1>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>LexiQuest</h3>
+                    <p>A word game project designed to make learning vocabulary fun.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Library Book Tracker</h3>
+                    <p>A program for adding, viewing, editing, and deleting book records.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Student Management System</h3>
+                    <p>A system concept for organizing student information.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="tools" class="section">
+            <p class="accent">MY TECHNOLOGIES</p>
+            <h1>Tools and Skills</h1>
+
+            <div class="tools-grid">
+                <div class="tool">Python</div>
+                <div class="tool">Java</div>
+                <div class="tool">HTML</div>
+                <div class="tool">CSS</div>
+                <div class="tool">C++</div>
+                <div class="tool">Kotlin</div>
+                <div class="tool">Git</div>
+                <div class="tool">GitHub</div>
+                <div class="tool">VS Code</div>
+            </div>
+        </section>
+
+        <section id="contacts" class="section">
+            <p class="accent">GET IN TOUCH</p>
+            <h1>Contact Me</h1>
+            <p>Have a question or project idea? Feel free to contact me.</p>
+
+            <form id="contactForm">
+                <input type="text" id="contactName"
+                       placeholder="Your Name" required>
+
+                <input type="email" id="contactEmail"
+                       placeholder="your@email.com" required>
+
+                <textarea id="contactMessage"
+                          placeholder="How can I assist you? Please share the details of your inquiry..." required></textarea>
+
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+
+            <p id="formNotice"></p>
+            <p>Email: nestorbenitezx10@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/"
+                          target="_blank" rel="noopener noreferrer">My GitHub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> My Developer Portfolio</p>
     </footer>
-  </aside>
 
-  <main class="main-content" id="home">
-    <section class="toolkit section" id="tools">
-      <div class="top-heading">
-        <div>
-          <p class="eyebrow">MY TOOLKIT</p>
-          <h1>Tools I work with</h1>
-        </div>
-        <a class="contact-button" href="#contact">
-          <i class="fa-regular fa-envelope"></i> Get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-
-      <div class="tool-list">
-        <span><i class="fa-brands fa-python"></i> Python</span>
-        <span><i class="fa-brands fa-java"></i> Java</span>
-        <span><i class="fa-brands fa-html5"></i> HTML</span>
-        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
-        <span><i class="fa-brands fa-android"></i> Kotlin</span>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div class="project-copy">
-            <p class="eyebrow">FEATURED · PROJECT 01</p>
-            <h2>LexiQuest</h2>
-            <p>A word-hunting game built to make learning vocabulary fun and interactive.</p>
-            <a class="project-tag" href="#contact">Student project</a>
-          </div>
-          <div class="project-art">
-            <i class="fa-solid fa-gamepad"></i>
-            <span>LEXIQUEST</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="card-icon blue"><i class="fa-solid fa-laptop-code"></i></div>
-          <p class="eyebrow">PROJECT · WEB</p>
-          <h2>My Portfolio</h2>
-          <p>A personal website showcasing my skills and development journey.</p>
-        </article>
-
-        <article class="project-card">
-          <div class="card-icon orange"><i class="fa-solid fa-book-open"></i></div>
-          <p class="eyebrow">PROJECT · JAVA</p>
-          <h2>Library Book Tracker</h2>
-          <p>A simple system for adding, editing, searching, and deleting book records.</p>
-        </article>
-
-        <article class="project-card">
-          <div class="card-icon purple"><i class="fa-solid fa-code"></i></div>
-          <p class="eyebrow">PROJECT · PYTHON</p>
-          <h2>Student Management</h2>
-          <p>A CRUD application for organizing student information and records.</p>
-        </article>
-
-        <article class="project-card">
-          <div class="card-icon green"><i class="fa-solid fa-lightbulb"></i></div>
-          <p class="eyebrow">CURRENTLY LEARNING</p>
-          <h2>New ideas</h2>
-          <p>Exploring application development, UI design, and better coding practices.</p>
-        </article>
-
-        <article class="project-card wide-card">
-          <p class="eyebrow">WHAT'S NEXT</p>
-          <h2>More work will appear here <i class="fa-solid fa-arrow-up-right-from-square"></i></h2>
-          <p>I'm continuously learning and building new projects. Check back for updates.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section information-section" id="services">
-      <p class="eyebrow">WHAT I CAN DO</p>
-      <h2>Services</h2>
-      <div class="simple-grid">
-        <article class="project-card">
-          <h3>Web Development</h3>
-          <p>Building responsive pages using HTML, CSS, and JavaScript.</p>
-        </article>
-        <article class="project-card">
-          <h3>Programming Projects</h3>
-          <p>Creating beginner-friendly applications and CRUD systems.</p>
-        </article>
-        <article class="project-card">
-          <h3>UI Design</h3>
-          <p>Planning clean layouts and user-friendly interfaces.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section information-section" id="resources">
-      <p class="eyebrow">LEARN AND EXPLORE</p>
-      <h2>Free Resources</h2>
-      <div class="resource-links">
-        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs ↗</a>
-        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools ↗</a>
-        <a href="https://docs.github.com/" target="_blank" rel="noopener noreferrer">GitHub Docs ↗</a>
-      </div>
-    </section>
-
-    <section class="section information-section" id="about">
-      <p class="eyebrow">A LITTLE ABOUT ME</p>
-      <h2>About Me</h2>
-      <p class="about-text">
-        Hello! I'm a student developer interested in programming,
-        web development, and mobile application development.
-        I enjoy learning new technologies and creating projects
-        that help me improve my skills.
-      </p>
-      <div class="skill-tags">
-        <span>Python</span><span>Java</span><span>C++</span>
-        <span>Kotlin</span><span>HTML</span><span>CSS</span>
-      </div>
-    </section>
-
-    <section class="section information-section" id="contact">
-      <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Get in touch</h2>
-      <p class="about-text">Have a question or want to discuss a project? Send me an email.</p>
-      <a class="contact-button" href="mailto:nestorbenitezx10@gmail.com">
-        <i class="fa-regular fa-envelope"></i> Email me
-      </a>
-    </section>
-
-    <div class="bottom-space"></div>
-  </main>
-
-  <a class="floating-message" href="mailto:nestorbenitezx10@gmail.com">
-    <i class="fa-regular fa-envelope"></i> Message me
-    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-  </a>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
